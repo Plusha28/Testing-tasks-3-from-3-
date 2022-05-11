@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Чат</title>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script> <!--Подключение библитеки JQuery-->
+    <!--Стрелочная функция с использованием "JQuery": "мигаем" кнопками-->
+    <script>
+        $(function () {  <!--$(document).ready(function () - при добавлении запустит скрипт тогда, когда модель страницы (DOM) будет готова для выполнения кода-->
+            $(".colored").css("background-color", "red"); <!--Через метод css обращаемся к элементу страницы по его классу и меняем цвет-->
+            setTimeout(() => {  <!--Устанавливаем таймаут-->
+                $(".colored").css("background-color", "white")
+            }, 900);  <!--По истечении времени фоновый цвет кнопки станет другим-->
+        })
+    </script>
+</head>
+<body>
+<!--Шапка-->
+<header class="header">
+    <!--Навигационное меню-->
+    <nav class="menu">
+        <ul class="navbar">
+            <li class="tab colored"><a href="#">Главная</a></li>
+            <li class="tab colored"><a href="#">Новости</a></li>
+            <li class="tab colored"><a href="#">Чат</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+<!--Список пользователей в чате-->
+<div class="users-container">
+    <div class="users">
+            <ul class="list-users">
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                    <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Алексей Григорьев</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Елена Есипова</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Андрей Осипов</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Павел Огурцов</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Александра Шипилина</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Сати Хасаги</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Олег Кузьмин</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Слава Пингвинов</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Савелий Петин</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Ольга Камышова</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Анна Гордеева</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Руслан Фролов</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Степан Иванов</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Анастасия Силина</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Денис Шевчук</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Яна Ковальчук</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Антон Радин</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Евгений Сидоров</span></a>
+                </li>
+
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Елена Антонова</span></a>
+                </li>
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Глеб Тропинин</span></a>
+                </li>
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Диана Раскольникова</span></a>
+                </li>
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Кирилл Мефодиев</span></a>
+                </li>
+                <li class="icon-name-user">
+                    <div class='icon-container'>
+                        <img src="img/icon-user.png" alt="Пользователь"/>
+                        <div class='status-circle'></div></div>
+                    <a href="#" class="username"><span>Аркадий Петров</span></a>
+                </li>
+            </ul>
+    </div>
+</div>
+<!--Окно чата-->
+<div class="chat">
+
+            <ul>
+                <li class="companion-name">
+                    <div class="name">
+                        <span class="user-name">Алексей Григорьев</span>
+                    </div>
+                    <div class="message">
+                        <p>Я тут подумал. Надо сделать так, чтобы пользователи вообще не загружали картинки. Пусть обложки собираются автоматически.</p>
+                        <span class="msg-time">5:00 pm</span>
+                    </div>
+                </li>
+                <li class="companion-name">
+                    <div class="name">
+                        <span class="user-name">Алексей Григорьев</span>
+                    </div>
+                    <div class="message">
+                        <p>Хочу поставить тест — посмотреть, насколько быстро грузится обложка, если генерить её из данных пользователя.</p>
+                        <span class="msg-time">5:10 pm</span>
+                    </div>
+                </li>
+                <li class="companion-name">
+                    <div class="name">
+                        <span class="user-name">Алексей Григорьев</span>
+                    </div>
+                    <div class="message">
+                        <p>Сможешь закодить прототип? Тут нужны реально только простые заголовки, картинки и цвет фона. Завтра днём было бы здорово отдать Кате на тестирование.</p>
+                        <span class="msg-time">5:10 pm</span>
+                    </div>
+                </li>
+                <li class="me">
+                    <div class="name">
+                        <span class="user-name">Антон Шагалин</span>
+                    </div>
+                    <div class="message">
+                        <p>Постараюсь, надо будет почитать про вёрстку, правда. Придётся посидеть.</p>
+                        <span class="msg-time">5:12 pm</span>
+                    </div>
+                </li>
+                <li class="companion-name">
+                    <div class="name">
+                        <span class="user-name">Алексей Григорьев</span>
+                    </div>
+                    <div class="message">
+                        <p>Чего там читать, интерактивная вёрстка — это просто HTML, CSS и JS. Начинать нужно с HTML и CSS. Причем сразу с обоих, так что иди и пробуй.</p>
+                        <span class="msg-time">5:15 pm</span>
+                    </div>
+                </li>
+                <li class="companion-name">
+                    <div class="name">
+                        <span class="user-name">Алексей Григорьев</span>
+                    </div>
+                    <div class="message">
+                        <p>Где-то за час управишься.</p>
+                        <span class="msg-time">5:16 pm</span>
+                    </div>
+                </li>
+                <li class="companion-name">
+                    <div class="name">
+                        <span class="user-name">Алексей Григорьев</span>
+                    </div>
+                    <div class="message">
+                        <p>Ну чего, не спишь там ещё? Давай посмотрим, как твои успехи. Интересно же!</p>
+                        <span class="msg-time">7:30 pm</span>
+                    </div>
+                </li>
+                <li class="companion-name">
+                    <div class="name">
+                        <span class="user-name">Алексей Григорьев</span>
+                    </div>
+                    <div class="message">
+                        <p>Молодец! Ладно, делай перерывы просто 🙂Стратегия железной усидчивости еще никого не делала счастливым.</p>
+                        <span class="msg-time">7:35 pm</span>
+                    </div>
+                </li>
+                <li class="me">
+                    <div class="name">
+                        <span class="user-name">Антон Шагалин</span>
+                    </div>
+                    <div class="message">
+                        <p>Да я доделаю уже сейчас и всё. По коням, у нас код, возможно, тег стайл.</p>
+                        <span class="msg-time">7:36 pm</span>
+                    </div>
+                </li>
+                <li class="companion-name">
+                    <div class="name">
+                        <span class="user-name">Алексей Григорьев</span>
+                    </div>
+                    <div class="message">
+                        <p>Мда, тебе и правда там тяжело. Давай соберись с силами! ✨</p>
+                        <span class="msg-time">7:41 pm</span>
+                    </div>
+                </li>
+                <li class="companion-name">
+                    <div class="name">
+                        <span class="user-name">Алексей Григорьев</span>
+                    </div>
+                    <div class="message">
+                        <p>Привет! Ты как там после вчерашнего?</p>
+                        <span class="msg-time">8:37 am</span>
+                    </div>
+                </li>
+                <li class="companion-name">
+                    <div class="name">
+                        <span class="user-name">Алексей Григорьев</span>
+                    </div>
+                    <div class="message">
+                        <p>Спасибо за работу, кстати. У нас вообще рук не хватает для тестирования, и мы этим толком не занимаемся, а надо!</p>
+                        <span class="msg-time">8:40 am</span>
+                    </div>
+                </li>
+                <li class="me">
+                    <div class="name">
+                        <span class="user-name">Антон Шагалин</span>
+                    </div>
+                    <div class="message">
+                        <p>Да ничего, я норм, спать только хочется.</p>
+                        <span class="msg-time">8:42 am</span>
+                    </div>
+                </li>
+            </ul>
+</div>
+</main>
+
+
+<!--Подвал-->
+<footer class="footer">
+    <!--Поле ввода-->
+    <input class="entry-field" type="text" value="">
+    <!--Кнопка отправки комментария-->
+    <input class="btn-send" type="button" value="Отправить">
+</footer>
+
+
+</body>
+</html>
